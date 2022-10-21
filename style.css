@@ -1,0 +1,176 @@
+
+@font-face {
+    font-family: int;
+    src: url("./res/SulphurPoint-Bold.ttf");
+}
+html,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+input[type="text"]:focus{
+    outline: solid rgba(47, 88, 124, 0.61);
+}
+.Container{
+    background-color: #d1d1d1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: int;
+}
+#load{
+    width: 100%;
+    height: 300px;
+    background-color:#b4b4b4a2;
+    position: absolute;
+    top: 0px;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.loading{
+    border:8px solid #0d6efd;
+    border-top:8px solid #00000000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: loop 1.5s linear infinite ;
+}
+@keyframes loop {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+an.material-symbols-outlined{
+    padding: 0px 20px;
+}
+.searchbutton{
+    background-color: #3885fa;
+    width: 80vw;
+    height: 28px;
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbutton:hover{
+    background-color: #0d6efd;
+    cursor: pointer;
+}
+.input{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    padding: 0px 3px;
+    height: 38px;
+    border-radius: 3px;
+    align-items: center;
+    background-color: #0d6efd;
+}
+input[type="text"]{
+   width: 90vw;
+   height: 28px;
+   padding: 5px;
+   border: none;
+}
+.description{
+    font-family:   sans-serif;
+    margin: 20px;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    font-size: 1.2em;
+}
+h3{
+    color: #0d6efd;
+}
+img{
+    padding: 10px;
+    cursor: pointer;
+}
+.cover{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.418);
+    position: absolute;
+    width: 100vw;
+    height: 105vh;
+    top:0px;
+    overflow: hidden;
+    text-align: center;
+    font-family: int;
+}
+.error{
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    position: absolute;
+}
+#download{
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid blue;
+    color: blue;
+    display:none;
+    align-items: center;
+    cursor: pointer;
+}
+#download:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+#closebutton{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: scale(0.7);
+    transition: transform 0.5s;
+}
+#closebutton:hover{
+    transform: scale(0.9);
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+@media (min-width:570px){
+    .input{
+        width:450px;
+    }
+    .searchbutton{
+        width: 450px;
+    }
+}
+@media (min-width:750px){
+    .input{
+        width:600px;
+    }
+    .searchbutton{
+        width: 600px;
+    }
+}
+@media (min-width:985px){
+    .input{
+        width:500px;
+    }
+    .searchbutton{
+        width: 400px;
+    }
+    .boxes{
+        flex-direction: row;
+    }
+    
+}
