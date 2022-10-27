@@ -8,13 +8,14 @@ html,body{
     padding:0;
     box-sizing: border-box;
     user-select: none;
+    background-color: #353434;
 }
 
 input[type="text"]:focus{
     outline: solid rgba(47, 88, 124, 0.61);
 }
 .Container{
-    background-color: #d1d1d1;
+    background-color: #353434;
     padding: 10px;
     display: flex;
     flex-direction: column;
